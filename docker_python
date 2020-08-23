@@ -1,0 +1,9 @@
+# from python
+FROM python
+MAINTAINER syamsul
+WORKDIR /app
+# copy what is needed
+COPY . . 
+# requirements
+RUN ["pip", "install", "-r", "requirements.txt"] 
+CMD ["python", "api.py"] # run

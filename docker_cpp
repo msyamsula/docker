@@ -1,0 +1,7 @@
+# ubuntu that has installed cpp
+from cpp/base 
+workdir /src
+# copy cmakelist and program and build
+copy CMakeLists.txt 639.cpp ./ 
+run cmake . && make # build
+cmd ["./prog"]
